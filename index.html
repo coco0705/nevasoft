@@ -1,0 +1,610 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>home</title>
+    <meta name ="viewport" content="width=device-width initial-scale=1.0">
+      <script language = "JavaScript" type = "text/JavaScript">
+	
+	  function change1_in(){
+		images = new Array(1); images[0] = "./images/change1.jpg";
+		   var image = document.getElementById("image1");
+		      image.src = images[0];
+         }
+
+          function change2_in(){
+	       images = new Array(2); images[1] = "./images/second_image.jpg";
+	         var image = document.getElementById("image2");
+	           image.src = images[1];
+	}
+	
+	function change3_in(){
+		images = new Array(3); images[3] = "./images/third_image.png";
+		   var image = document.getElementById("image3");
+		     image.src = images[3];
+       }
+
+       function change1_out(){
+		images = new Array(1); images[0] = "./images/change2.jpg";
+		   var image = document.getElementById("image1");
+		     image.src = images[0];
+         }
+
+          function change2_out(){
+	      images = new Array(2); images[1] = "./images/first_img.jpeg";
+	         var image = document.getElementById("image2");
+	            image.src = images[1];
+	} 
+	
+	function change3_out(){
+		images = new Array(3); images[3] = "./images/change3.jpg";
+	         var image = document.getElementById("image3");
+		     image.src = images[3];
+       }
+
+       function go_to_egov(){
+	    var mail = "http://www.gov.za";
+	      if (confirm ("Thank you for visiting the e-gov page")){
+		    document.location = mail;
+		}
+	}
+	
+	function send_mail(){
+		email = new Array(1); email[0] = "mailto:mysite@hotmail.com";
+		  if (confirm("send email to linda?")){
+			  document.location = email[0];
+			}
+	}
+     </script>
+    <style type="text/css"/>
+body{
+	   background-image:url("./images/main1.jpg");
+	   background-color:white;
+	   background-attachment:fixed;
+	   background-repeat:no-repeat;
+	   background-position: centre;
+	   size:cover;
+	   text-align:center;
+}
+h2{
+	  font-family:Times New Roman;
+         text-align:center;
+	  margin-left:auto;
+	  margin-right:auto;
+	  color:skyblue;
+	  font-size:50px;
+	  margin-top:1px;
+}
+h2 img{
+	height:48px;
+	width:150px;
+}
+
+h1{
+	font-family:Times New Roman;
+	margin-left:auto;
+	margin-right:auto;
+	color: white;
+	font-size:50px;
+}
+
+sup{
+	  color:red;
+}
+div.top{
+	opacity:0.80;
+	background:white;
+	width:100%;
+	height:50px;
+	top:0px;
+	border-bottom:2px solid black;
+      right:0px;
+      z-index:1;
+       left:0px;
+	position:fixed;
+}
+div.first.p{
+	color:black;
+}
+li{
+	color:lightgrey;
+	font-size:9px;
+}
+b{
+	color:red;
+}
+div.profile{
+	height:250px;
+	margin-right:150px;
+	width:400x;
+	background:dodgerblue;
+	color:white;
+}
+div.background{
+	height:250px;
+	margin-right:150px;
+	width:400px;
+	background:dodgerblue;
+	color:white;
+	
+}
+#mail{
+	     height:50px;
+	     width:100%;
+	     position:fixed;
+	     bottom:0;
+	     left:0;
+	     right:0;
+	     background-color:white;
+	     opacity:0.80;
+	     z-index:1;
+}
+#mail p{
+	color:white;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	font-size:45px;
+	margin-top:4px;
+	z-index:1;
+}
+#mail img{
+	height:38px;
+	width:60px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-right:28px;
+	margin-top:-80px;
+	float:right;
+}
+a{
+	 color:black;
+	 text-decoration:none;
+}
+#image1{
+       margin-left:10;
+       margin-right:10;
+       margin-top:-21px;
+       width:100%;
+       height:350px;
+}
+#image2{
+       margin-left:10;
+       margin-right:10;
+       width:100%;
+       height:350px;
+}
+#image3{
+       margin-left:10;
+       margin-right:10;
+       width:100%;
+       height:350px;
+}
+#image4{
+	margin-left:10;
+       margin-right:10;
+	width:100%;
+	height:350px;
+}
+main{
+	margin-top:100px;
+}
+main p{
+	border-left:10px solid red;
+	margin-top:4px;
+	padding-left:5px;
+	color:black;
+	font-size:25px;
+	font-weight:bold;
+	left:0;
+	right:0;
+}
+ol.services{
+	margin-left:50px;
+	margin-right:50px;
+}
+ol.services li{
+        color:dodgerblue;
+        font-size:25px;
+        list-style-type:none;
+}
+#About li{
+	color:white;
+	font-size:20px;
+}
+#social{
+	list-style-type:none;
+	margin-left:auto;
+	width:300px;
+	height:20px;
+	margin-right:auto;
+	display:inline;
+}
+#social li{
+	padding:15px;
+	display:inline;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+#social_h{
+	text-align:center;
+	color:red;
+	margin-left:auto;
+	font-size:39px;
+	margin-right:auto;
+}
+#social img {
+	background-color:transparent;
+}
+#business_h{
+	background:white;
+       margin-left:0;
+	width:100%;
+	height:250px;
+	margin-right:0;
+}
+div.bottom {
+	opacity:0.65;
+	background-color:black;
+	height:800px;
+	width:100%;
+	margin-left:0;
+	margin-right:0;
+	z-index:-1;
+	bottom:0;
+}
+div.bottom h1{
+	color:cyan;
+	margin-left:auto;
+	text-align:center;
+	margin-right:auto;
+	margin-top:2px;
+	
+}
+div.bottom h1 img{
+	height:48px;
+	width:150px;
+}
+div.bottom p{
+	color:white;
+}
+#about{
+	color:white;
+	margin-left:110px;
+	font-size:25px;
+	margin-top:45px;
+}
+#p2{
+	margin-left:auto;
+	margin-right:auto;
+	text-align:right;
+	border-style:none;
+	margin-top:auto;
+}
+#p1{
+	margin-top:auto;
+	border-style:none;
+	bottom:5px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
+}
+#contact{
+	height:70px;
+	border-radius:50px;
+	margin-left:auto;
+	margin-right:auto;
+	border:none;
+	margin-top:80px;
+	width:100%;
+	background-color:dodgerblue;
+	color:white;
+	font-weight:bold;
+	font-size:30px;
+	box-shadow: 6px 6px 0px 0px lightgrey;
+	z-index:-1;
+	
+}
+big{
+	color:red;
+	
+}
+#p3{
+	margin-top:auto;
+	margin-right:auto;
+	margin-left:auto;
+	color:white;
+	border-style:none;
+}
+#gauteng {
+    left:0;
+    right:0;
+}
+#gauteng img{
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+div.content{
+	display:none;
+	background-color:red;
+	height:100px;
+	width:150px;
+	border-radius:10px;
+}
+div.content li{
+	list-style-type:none;
+       padding-right:5px;
+	padding:7px;
+}
+div.content a{
+	color:white;
+	font-size:30px;
+}
+#menu{
+	 width:115px;
+	height:45px;
+	border-radius:50px;
+	font-weight:bold;
+	color:black;
+	font-size:35px;
+}
+div.dropdown{
+	width:109px;
+	height:45px;
+	right:5px;
+	border-radius:50px;
+	float:right;
+	margin-top:-98px;
+	position:fixed;
+	z-index:1;
+	margin-left:auto;
+	color:black;
+	font-size:30px;
+	background-color:red;
+	box-shadow: 4px 4px 1px 1px grey;
+	margin-right:auto;
+	padding-right:5px;
+}
+div.dropdown:hover div.content{
+	display:inline-block;
+}
+#Eng{
+	height:100px;
+	margin-top:-30px;
+	width:100%;
+	z-index:1;
+	background-color:black;
+	opacity:0.65;
+}
+#reasons{
+	height:190px;
+	opacity:0.65;
+	margin-top:-30px;
+	width:100%;
+	z-index:1;
+	background-color:black;
+}
+#partner{
+	height:200px;
+	width:100%;
+	opacity:0.65;
+	z-index:1;
+	background-color:black;
+}
+#best{
+	height:100px;
+	margin-top:-30px;
+	width:100%;
+	z-index:1;
+	opacity:0.65;
+	background-color:black;
+}
+#pic1{
+	margin-left:auto;
+	margin-right:auto;
+}
+#pic2{
+	margin-left:auto;
+	margin-top:-710px;
+}
+#pic2 img{
+	border-radius:65px;
+}
+#pic1 img{
+	border-radius:65px;
+}
+#profile{
+	margin-left:auto;
+}
+figcaption{
+	color:red;
+	margin-left:auto;
+	font-size:25px;
+}
+</style>
+    
+</head>
+<body>
+<div  class="top">
+<h2><img src="./images/logo.jpg"></h2>
+ </div>
+
+  <div class = "dropdown">
+      <button id = "menu">menu</button>
+         <div class = "content">
+             <li><a href = "./index.html">Home</a></li>
+             <li><a href = "./contact.html">contact</a></li>
+    </div>
+</div>
+<!--.  create an event with an alert to send an email    -->
+<div id="mail">
+              <p><a href="#" onclick = "send_mail();" >Message</p><img src="./images/message.png"></a>
+</div>
+
+     <main>  
+       
+          <img id="image1" src="./images/change2.jpg" onmouseout = "change1_out();" onmouseover = "change1_in()"; alt = "the image about web development"/>
+           
+            <p>
+               Web development is a very challenging job that requires a variety of skills, including collaboration,
+                communication, and technical writing. Engineer / founder <b><big>Linda Tshabangu </big></b>
+            </p>
+             <p>
+             <big>NevaSoft</big> is a Software Engineering Comtracting service that performs well in<b> developing and maintaining</b>
+              high quality custom Software(Web)  for any enterprises / organisations on their team of engineers.<br/>
+              Having a great software engineer that not only provides support and training but utilizes all the current technology
+              needs a great team of engineers with a huge amount of passion for solving problems.<br/></p>
+            
+
+                  <p> In today’s digitally dominated world, IT-related skills are far and away the most scarce skills globally and in South Africa. 
+                    Developing innovative, user-friendly software has become a necessity for any enterprise or organisation that wants to stay competitive.
+                     Business environments are always changing, and so is technology.
+	              Having <b>NevaSoft</b> services on your team of engineers is a great investment to your enterprises tech solutions. A great way to do business is through innovation and collaboration.
+                </p>
+                 <p> Every modern company needs online presence whether it be a Web application that is developed by a great team of supportive engineers, and there is also a
+                          need to constantly update website content, user interfaces, visuals 
+                        and functionality. Web development is a thriving, rapidly growing business tool with demand likely to remain high for many years to come.</p>
+               <hr/>
+               
+               
+               <img id="image2" src=" ./images/first_img.jpeg" onmouseout = "change2_out();" onmouseover = "change2_in();" alt="image of coding"/>
+       
+                <p>
+                   Hitting the keyboard early on in life can make a big difference in your tech career in future and one of many reasons behind <b>NevaSoft</b> services.
+                    building SA's digital future together.
+                  </p>
+
+        
+         <p><b>NevaSoft</b> is one of the golden child of the current and future generations of smart and innovative engineering services developing for the web. this means coding those many 
+                 web-pages you browse through over your morning coffee. It’s diverse and ranges in complexity, from a "HELLO WORLD"
+                 to many dozens of interconnected files that only the original developer knows how to organize.</p>
+
+             <p> Software Engineering today is exploding thanks to the emergence of new web
+              technologies and Application Programming Interfaces (APIs) and front-end services. which let websites “plug in” to other useful features.
+              The Web today can deliver ‘apps’ that feel native, because browsers now are so 
+              much more than a URL bar and an Ad-blocker these days. If you’re looking to get started on your next web business development project, check out <b>NevaSoft</b>
+               Software services to add value to your enterprise / organisation.
+  </p>
+              <p>Information Technology has become one of the most important resources to operate and manage enterprise and organizations in the 21st century. It touches every facet of a modern enterprise,
+                 from customer service to operations, to social media, and to security. Over time, technology creates new jobs like web application developers, social media and business intelligence
+                 analysts, information security specialists, and data architects. Such jobs didn’t exist twenty, or even ten, years ago. Information technologies that integrate business functions across the
+                 enterprise, known as Enterprise Systems, have become the backbone of modern organizations.
+                  In order to operate efficiently, companies are seeking ways to improve their business processes. Increasingly, companies are looking toward technology, such as enterprise systems
+
+  </p>
+               <p>
+               <big>Smart-LT</big> not only develops an easy relationship with an existing or new team stuff in an enterprise /organisation while the customer service is world class. 
+               but also keeps you in the loop through the entire project and offer tips on how you can maximize your Web App. Review this site
+               to see how <b>NevaSoft</b> can add value in your team of engineers to solve your daily tech challenges faced by many enterprises and organisations.
+                  </p>
+                  <hr/>
+
+                 
+              
+                    <img id="image3" src="./images/change3.jpg"  onmouseout ="change3_out();" onmouseover = "change3_in();" altmage of people  sitting ina meeting">
+          <div id = "reasons"><h1>10 reasons why you should partner with <b>Smart-LT</b></h1></div>
+                      <br/>
+
+
+                <ol class="services">
+<li>✓ Independent and Qualified Software Engineering services</li>
+                        
+<li>✓ Performs Professional Web Development & Engineering Work.</li>
+
+<li>✓ Great Working Relationship with clients and team stuff</li>
+
+<li>✓ Constant contact with other engineers and team stuff – communication is key!</li>
+
+<li>✓ meets your requirements and do not "nickel and dime" you along the way.</li>
+
+<li>✓ meets your deadline, honest, ethical and hard working Engineer </li>
+
+<li>✓ keeps up with the latest technologies adapts quickly.</li>
+
+<li>✓ develops and maintains and sells custom computer software for sites.</li>
+
+<li>✓  Keeping skills sharp with continual learning.</li>
+
+<li>✓ builds and renders reliable Software for the Web!</li>
+            </ol>
+      <hr/>
+      
+      
+
+   <h2 id="social_h">follow NevaSoft on socials</h2>
+
+<ul id="social">
+  
+<li>
+      <a href="#"><img src="./images/fcb.png"></a>
+   </li>
+
+   <li>
+      <a href="#"><img src="./images/twi.png"></a> 
+   </li>
+
+<li>
+  <a href="#"><img src ="./images/Instagram.png"></a>
+</li>
+
+<li>
+  <a href="#"><img src ="./images/link.png"></a>
+</li>
+</ul>
+<hr/>
+
+         <br/>
+
+ <div id="business_h">
+        <form action="./contact.html" method="Post">
+          <button id = "contact" type="submit" >find NevaSoft here >> </button>
+</form>
+</div>
+
+         <section id ="gauteng">
+           <img id = "gauteng1" src = "./images/gauteng1.gif" onclick = "go_to_egov();">
+                      <br/>
+              <img  src = "./images/gauteng2.gif" onclick = "go_to_egov();">
+          </section>
+        
+     <div class="bottom">
+
+       <h1><img src = "./images/logo.jpg"</h1>
+
+       
+           <p id="p1">ABOUT<br/><br/>
+           An Independent Software <br/>Engineering Contracting service<br/>
+           that provides <b>I.T web <br/> services </b>
+           for any enterprise and organisations <br/>of any team size <br/>
+           on their  I.T projects. <br/>building software for the<br/> web<br/>
+           <br/>hire
+           <b>NevaSoft</b> services on your team<br/> 
+           today and see <br/> your enterprise
+           transform<br/> digitally through<br/> innovation.
+</p>
+           <p id="p2">SERVICES<br/>
+                                 <br/>web Architecture<br/>
+                                  Software Engineering (web)<br/>
+                                  Software design / development<br/>
+                                  System Analyst<br/>
+
+</p>
+
+  
+      <p id="p3">
+             Copyright@<b> NevaSoft</b>
+             Location:<b> Johannesburg</b>
+             Est:<b> 2020</b>
+             Founder/Engineer:<b> Linda Tshabangu</b>
+</p>
+</div>
+         </main>
+
+
+         
+            
+</body>
+</html>

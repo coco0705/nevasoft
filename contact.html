@@ -1,0 +1,271 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>contact</title>
+   <meta name="viewport" content="width=device-width initial-scale=1.0">
+   <style type="text/css">
+    body{
+	   background-image:url("./images/main1.jpg");
+	   background-attachment:fixed;
+	   size:cover;
+          background-color:white;
+	   background-repeat:no-repeat;
+	   text-align:center;
+}
+h2{
+	  font-family:Times New Roman;
+         text-align:center;
+	  margin-left:auto;
+	  margin-right:auto;
+	  color:skyblue;
+	  font-size:50px;
+	  margin-top:1px;
+}
+h2 img{
+	height:48px;
+	width:150px;
+}
+div.top{
+	opacity:0.88;
+	background:white;
+	width:100%;
+	height:50px;
+	top:0px;
+      right:0px;
+       left:0px;
+       z-index:1;
+	position:fixed;
+}
+#box{
+       height:620px;
+       width:auto;
+       margin-left:auto;
+       margin-right:auto;
+       background-color:black;
+       opacity:0.50;
+       z-index:-1;
+       border-radius:20px;
+       margin-top:40px;
+}
+#location{
+	margin-top:70px;
+	border-bottom:20px dotted white;
+	height:380px;
+	width:100%;
+}
+#location img {
+	width:100%;
+	height:350px;
+}
+#box h1 {
+	color:white;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	z-index:-1;
+	padding-right:auto;
+}
+
+#social{
+	display:inline;
+	margin-top:26px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#social li{
+	display:inline;
+	padding:17px;
+	text-align:center;
+}
+h3{
+       margin-left:auto;
+       margin-right:auto;
+       color:white;
+       text-align:center;
+       font-weight:bold;
+       font-size:25px;
+       margin-top:50px;
+       padding:10px;
+}
+h3 b {
+	color:red;
+	text-align:center;
+	font-weight:bold;
+}
+#p3{
+      color:white;
+      margin-top:220px;
+      margin-left:auto;
+      margin-right:auto;
+      font-size:25px;
+}
+#p3 b{
+	color:red;
+}
+#back {
+	margin-top:-70px;
+	background-color: transparent;
+	border-style:none;
+	color:red;
+	font-size:30px;
+	margin-right:auto;
+	float:left;
+	margin-left:auto;
+}
+div.dropdown-contact {
+	width:auto;
+	height:50px;
+	margin-top:30px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:dodgerblue;
+	font-weight:bold;
+	color:white;
+	font-size:30px;
+}
+div.dropdown-contact:hover div.number{
+	display:inline-block;
+}
+div.dropdown-email{
+	width:100%;
+	height:50px;
+	margin-left:auto;
+	margin-right:auto;
+	font-weight:bold;
+	margin-top:60px;
+	padding-top:-79px;
+	color:white;
+	font-size:30px;
+	background-color:dodgerblue;
+}
+div.dropdown-email:hover div.email{
+	display:inline-block;
+}
+button.email {
+	width:100%;
+	height:50px;
+}
+button.contact {
+	width:100%;
+	height:50px;
+}
+div.number{
+       background-color:dodgerblue;
+	width:100%;
+	height:50px;
+	display:none;
+}
+div.number li{
+	color:white;
+	list-style-type:none;
+	margin-left:auto;
+	text-align:center;
+	margin-right:auto;
+	font-size:30px;
+}
+
+button.contact img {
+	z-index:-1;
+	background-color:red;
+	margin-left:auto;
+	opacity:3%;
+	margin-top:-55px;
+}
+button.contact p{
+	margin-top:10px;
+	font-weight:bold;
+	font-size:25px;
+	color:red;
+}
+div.email{
+	width:100%;
+	height:50px;
+	display:none;
+	background-color:dodgerblue;
+	z-index:1;
+}
+button.email img {
+	z-index:-1;
+	background-color:red;
+	margin-left:210px;
+	opacity:3%;
+	margin-top:-55px;
+}
+button.email p{
+	margin-top:10px;
+	color:red;
+	font-weight:bold;
+	font-size:25px;
+}
+div.email li{
+	color:white;
+	font-size:30px;
+	list-style-type:none;
+	margin-left:auto;
+	text-align:center;
+	margin-right:auto;
+	display: block;
+	margin-top:5px;
+}
+</style>
+
+</head>
+<body>
+
+<div  class="top">
+<h2><img src ="./images/logo.jpg"></h2>
+<form action = "./index.html"  method = "post">
+       <button id ="back"> << Back </button>
+</form>
+  </div>
+    <div id ="location">
+           <img src ="./images/map.jpg ">
+   </div>
+
+
+    <div id ="box">
+            <h1>Engineer</h1>
+            <h3>name: <b>Linda</b><br/><br/> Surname: <b>Tshabangu</b></h3>
+
+               <div class = "dropdown-contact">
+                  <button class = "contact"><p>call engineer</p><img src = "./images/call.png"></button>
+                       <div class ="number"><li>0711324250</li></div>
+              </div>
+
+      <div class = "dropdown-email">
+                  <button class = "email"><p>mail engineer</p><img src ="./images/message.png"></button>
+                       <div class ="email"><li>NevaSoft@hotmail.com </li>
+                      </div>
+              </div>
+
+</div>
+
+<ul id="social">
+<li>
+      <a href="#"><img src="./images/fcb.png"></a>
+   </li>
+
+   <li>
+      <a href="#"><img src="./images/twi.png"></a> 
+   </li>
+
+<li>
+  <a href="#"><img src ="./images/Instagram.png"></a>
+</li>
+
+<li>
+  <a href="#"><img src ="./images/link.png"></a>
+</li>
+</ul>
+
+
+  <p id="p3">
+             Copyright@<b> NevaSoft</b>
+             Location:<b> Johannesburg</b>
+             Est:<b> 2020</b>
+             Founder/Engineer:<b> Linda Tshabangu</b>
+</p>
+  
+</body>
+</html>
